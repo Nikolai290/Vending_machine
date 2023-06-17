@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Core\Vending_machine.Entities\Vending_machine.Entities.csproj" />
+      <ProjectReference Include="..\Core\Vending_machine.Core.Entities\Vending_machine.Core.Entities.csproj" />
       <ProjectReference Include="..\Vending_machine.Business.Dtos\Vending_machine.Business.Dtos.csproj" />
     </ItemGroup>
 

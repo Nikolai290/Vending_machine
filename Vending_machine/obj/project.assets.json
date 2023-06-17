@@ -450,7 +450,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Vending_machine.Business.Dtos": "1.0.0",
-          "Vending_machine.Entities": "1.0.0"
+          "Vending_machine.Core.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Vending_machine.Business.Interfaces.dll": {}
@@ -459,15 +459,25 @@
           "bin/placeholder/Vending_machine.Business.Interfaces.dll": {}
         }
       },
+      "Vending_machine.Core.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Vending_machine.Core.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vending_machine.Core.Entities.dll": {}
+        }
+      },
       "Vending_machine.Domain.Implementation/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.5.23280.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0-preview.4",
+          "Vending_machine.Core.Entities": "1.0.0",
           "Vending_machine.Domain.Interfaces": "1.0.0",
-          "Vending_machine.Domain.Settings": "1.0.0",
-          "Vending_machine.Entities": "1.0.0"
+          "Vending_machine.Domain.Settings": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Vending_machine.Domain.Implementation.dll": {}
@@ -481,7 +491,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.5.23280.1",
-          "Vending_machine.Entities": "1.0.0"
+          "Vending_machine.Core.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Vending_machine.Domain.Interfaces.dll": {}
@@ -498,16 +508,6 @@
         },
         "runtime": {
           "bin/placeholder/Vending_machine.Domain.Settings.dll": {}
-        }
-      },
-      "Vending_machine.Entities/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Vending_machine.Entities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Vending_machine.Entities.dll": {}
         }
       }
     }
@@ -1460,6 +1460,11 @@
       "path": "../Vending_machine.Business.Interfaces/Vending_machine.Business.Interfaces.csproj",
       "msbuildProject": "../Vending_machine.Business.Interfaces/Vending_machine.Business.Interfaces.csproj"
     },
+    "Vending_machine.Core.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Core/Vending_machine.Core.Entities/Vending_machine.Core.Entities.csproj",
+      "msbuildProject": "../Core/Vending_machine.Core.Entities/Vending_machine.Core.Entities.csproj"
+    },
     "Vending_machine.Domain.Implementation/1.0.0": {
       "type": "project",
       "path": "../Vending_machine.Domain.Implementation/Vending_machine.Domain.Implementation.csproj",
@@ -1474,11 +1479,6 @@
       "type": "project",
       "path": "../Vending_machine.Domain.Settings/Vending_machine.Domain.Settings.csproj",
       "msbuildProject": "../Vending_machine.Domain.Settings/Vending_machine.Domain.Settings.csproj"
-    },
-    "Vending_machine.Entities/1.0.0": {
-      "type": "project",
-      "path": "../Core/Vending_machine.Entities/Vending_machine.Entities.csproj",
-      "msbuildProject": "../Core/Vending_machine.Entities/Vending_machine.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1490,10 +1490,10 @@
       "Vending_machine.Business.Dtos >= 1.0.0",
       "Vending_machine.Business.Implementations >= 1.0.0",
       "Vending_machine.Business.Interfaces >= 1.0.0",
+      "Vending_machine.Core.Entities >= 1.0.0",
       "Vending_machine.Domain.Implementation >= 1.0.0",
       "Vending_machine.Domain.Interfaces >= 1.0.0",
-      "Vending_machine.Domain.Settings >= 1.0.0",
-      "Vending_machine.Entities >= 1.0.0"
+      "Vending_machine.Domain.Settings >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1502,11 +1502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine\\Vending_machine.csproj",
+      "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine\\Vending_machine.csproj",
       "projectName": "Vending_machine",
-      "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine\\Vending_machine.csproj",
+      "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine\\Vending_machine.csproj",
       "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-      "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine\\obj\\",
+      "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1524,26 +1524,26 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
+            "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj"
             },
-            "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj"
+            "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj"
             },
-            "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Implementations\\Vending_machine.Business.Implementations.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Implementations\\Vending_machine.Business.Implementations.csproj"
+            "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Implementations\\Vending_machine.Business.Implementations.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Implementations\\Vending_machine.Business.Implementations.csproj"
             },
-            "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj"
+            "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj"
             },
-            "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj"
+            "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj"
             },
-            "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj"
+            "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj"
             },
-            "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj"
+            "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj"
             }
           }
         }

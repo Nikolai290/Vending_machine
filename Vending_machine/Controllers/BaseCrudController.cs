@@ -15,11 +15,11 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     }
     
     [HttpGet("GetAll")]
-    public async Task<ActionResult<IEnumerable<TOutDto>>> GetAllAsync()
+    public async Task<ActionResult<IEnumerable<TOutDto>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         try
         {
-            var outDto = await _baseCrudService.GetAllAsync();
+            var outDto = await _baseCrudService.GetAllAsync(cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -29,11 +29,11 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     }
 
     [HttpGet("GetById/{Id}")]
-    public async Task<ActionResult<TOutDto>> GetByIdAsync([FromRoute] int Id)
+    public async Task<ActionResult<TOutDto>> GetByIdAsync([FromRoute] int Id, CancellationToken cancellationToken = default)
     {
         try
         {
-            var outDto = await _baseCrudService.GetByIdAsync(Id);
+            var outDto = await _baseCrudService.GetByIdAsync(Id, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -43,11 +43,11 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     }
 
     [HttpPost("Create")]
-    public async Task<ActionResult<TOutDto>> CreateAsync([FromBody] TCreateDto dto)
+    public async Task<ActionResult<TOutDto>> CreateAsync([FromBody] TCreateDto dto, CancellationToken cancellationToken = default)
     {
         try
         {
-            var outDto = await _baseCrudService.CreateAsync(dto);
+            var outDto = await _baseCrudService.CreateAsync(dto, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -57,11 +57,11 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     }
 
     [HttpPut("Update/{id}")]
-    public async Task<ActionResult<TOutDto>> UpdateAsync([FromRoute] int id, [FromBody] TUpdateDto dto)
+    public async Task<ActionResult<TOutDto>> UpdateAsync([FromRoute] int id, [FromBody] TUpdateDto dto, CancellationToken cancellationToken = default)
     {
         try
         {
-            var outDto = await _baseCrudService.UpdateAsync(id, dto);
+            var outDto = await _baseCrudService.UpdateAsync(id, dto, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -71,11 +71,11 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     }
 
     [HttpDelete("Delete/{id}")]
-    public async Task<ActionResult<bool>> DeleteAsync([FromRoute] int id)
+    public async Task<ActionResult<bool>> DeleteAsync([FromRoute] int id, CancellationToken cancellationToken = default)
     {
         try
         {
-            var outDto = await _baseCrudService.DeleteAsync(id);
+            var outDto = await _baseCrudService.DeleteAsync(id, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)

@@ -60,6 +60,7 @@ public class BaseCrudRepository<TEntity> : IBaseCrudRepository<TEntity> where TE
     public virtual async Task<TEntity> CreateAsync(TEntity obj, CancellationToken cancellationToken)
     {
         var result = await _dbSet.AddAsync(obj, cancellationToken);
+        await _dBcontext.SaveChangesAsync(cancellationToken);
         return result.Entity;
     }
 
@@ -85,21 +86,21 @@ public class BaseCrudRepository<TEntity> : IBaseCrudRepository<TEntity> where TE
 
     }
     
-    public void Save()
+    public async Task SaveAsync(CancellationToken cancellationToken)
     {
-        _dBcontext.SaveChanges();
+         await _dBcontext.SaveChangesAsync(cancellationToken);
     }
 
-    protected virtual void Dispose(bool disposing)
+    protected void Dispose(bool disposing)
     {
-        if (!this.disposed)
+        if (!disposed)
         {
             if (disposing)
             {
                 _dBcontext.Dispose();
             }
         }
-        this.disposed = true;
+        disposed = true;
     }
 
     public void Dispose()

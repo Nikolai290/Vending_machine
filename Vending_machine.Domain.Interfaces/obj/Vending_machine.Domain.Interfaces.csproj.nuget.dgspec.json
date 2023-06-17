@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {}
+    "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {}
   },
   "projects": {
-    "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
+    "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
-        "projectName": "Vending_machine.Entities",
-        "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
+        "projectUniqueName": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj",
+        "projectName": "Vending_machine.Core.Entities",
+        "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj",
         "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-        "outputPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\obj\\",
+        "outputPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {
+    "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
+        "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
         "projectName": "Vending_machine.Domain.Interfaces",
-        "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
+        "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-        "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\obj\\",
+        "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
-                "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
+              "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj": {
+                "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj"
               }
             }
           }

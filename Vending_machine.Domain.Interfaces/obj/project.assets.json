@@ -198,14 +198,14 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Vending_machine.Entities/1.0.0": {
+      "Vending_machine.Core.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/Vending_machine.Entities.dll": {}
+          "bin/placeholder/Vending_machine.Core.Entities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Vending_machine.Entities.dll": {}
+          "bin/placeholder/Vending_machine.Core.Entities.dll": {}
         }
       }
     }
@@ -537,16 +537,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Vending_machine.Entities/1.0.0": {
+    "Vending_machine.Core.Entities/1.0.0": {
       "type": "project",
-      "path": "../Core/Vending_machine.Entities/Vending_machine.Entities.csproj",
-      "msbuildProject": "../Core/Vending_machine.Entities/Vending_machine.Entities.csproj"
+      "path": "../Core/Vending_machine.Core.Entities/Vending_machine.Core.Entities.csproj",
+      "msbuildProject": "../Core/Vending_machine.Core.Entities/Vending_machine.Core.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.0-preview.5.23280.1",
-      "Vending_machine.Entities >= 1.0.0"
+      "Vending_machine.Core.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -555,11 +555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
+      "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
       "projectName": "Vending_machine.Domain.Interfaces",
-      "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
+      "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj",
       "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-      "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\obj\\",
+      "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -576,8 +576,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
-              "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
+            "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj": {
+              "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Core.Entities\\Vending_machine.Core.Entities.csproj"
             }
           }
         }

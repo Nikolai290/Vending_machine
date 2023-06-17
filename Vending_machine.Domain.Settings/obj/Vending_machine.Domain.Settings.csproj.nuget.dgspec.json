@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {}
+    "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {}
   },
   "projects": {
-    "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {
+    "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj",
+        "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj",
         "projectName": "Vending_machine.Domain.Settings",
-        "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj",
+        "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj",
         "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-        "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\obj\\",
+        "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",

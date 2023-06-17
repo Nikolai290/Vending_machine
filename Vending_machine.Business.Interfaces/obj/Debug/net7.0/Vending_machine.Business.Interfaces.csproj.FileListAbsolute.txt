@@ -2,8 +2,6 @@ D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Ve
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Interfaces.dll
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Interfaces.pdb
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Dtos.dll
-D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Entities.dll
-D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Entities.pdb
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Dtos.pdb
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.csproj.AssemblyReference.cache
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,3 +13,5 @@ D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Ve
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\refint\Vending_machine.Business.Interfaces.dll
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.pdb
 D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\ref\Vending_machine.Business.Interfaces.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Core.Entities.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Core.Entities.pdb

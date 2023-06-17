@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qK4fX/WqdzYnE2e0QCzgQyVBZJVDoqRioMFHqbCpwNTCmaBUDInKyjwlQBbsUCrZ9JNoMkL5gBZyYzeYoA0YSQ==",
+  "dgSpecHash": "yykoFSMpj0v7uOZNHT6djAISu0bKvYu6EtAXAuBk5QazfZk118tCM8Db5y5ehkdzCAKDvc+gszbkgfLfcVZrbA==",
   "success": true,
-  "projectFilePath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj",
+  "projectFilePath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikolai\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0-preview.5.23280.1\\microsoft.entityframeworkcore.8.0.0-preview.5.23280.1.nupkg.sha512",
     "C:\\Users\\Nikolai\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0-preview.5.23280.1\\microsoft.entityframeworkcore.abstractions.8.0.0-preview.5.23280.1.nupkg.sha512",

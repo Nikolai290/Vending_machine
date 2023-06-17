@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gmvxb1fa3OJtZ8Pr9oDXxtIufVVqf6VuUp+kF+DeO2CujeCn5R4pzdmbmcwfDAGh+fHtglfOvjVb0XkYh6WHTQ==",
+  "dgSpecHash": "VqdiQ7C7plBpAPLX1v9T+s24+R7ao60HVvLyL0w7PN3j9RGJ3wVr9b9eMlzN7QUvX0YopVeQHRfynWyYLoKTEw==",
   "success": true,
-  "projectFilePath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Implementations\\Vending_machine.Business.Implementations.csproj",
+  "projectFilePath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Implementations\\Vending_machine.Business.Implementations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikolai\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nikolai\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

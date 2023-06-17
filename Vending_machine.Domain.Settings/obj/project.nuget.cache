@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "23sfLUQr0+DIvSVKBjUxVPahq72FamrIZ/XiCAvv/ScKIcATW/GiuNGW3OFBSah4DpqbzM29yHUtZr6O2MchdA==",
+  "dgSpecHash": "pUjXmxw9831w2j/nk7u8BGRnKYo/0/BQjqsJCDdkUtcm7iMscOQ43+b/kJovMGPXQA9Lne/PAhrnX7mv/4zi4A==",
   "success": true,
-  "projectFilePath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj",
+  "projectFilePath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

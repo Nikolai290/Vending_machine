@@ -13,9 +13,13 @@ public class PostgresContext : DbContext, IDbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Manufacturer> Manufacturers { get; set; }
 
-    public PostgresContext(DbSettings dbSettings)
+    public PostgresContext()
     {
-        _dbSettings = dbSettings;
+        _dbSettings = new DbSettings()
+        {
+            ConnectionString = @"Host=localhost;Port=5432;User ID=postgres;Password=123;Database=vending_machine;"
+        };
+        Database.EnsureCreated();
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
