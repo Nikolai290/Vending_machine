@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jBTYXesUOSJyZmutvaX+bRFXlwlqfRlGH3Bh8xotC4r2XsNoNZhurHnv6VhsFRopYjndiZxcL1RjPgNt7fT9tQ==",
+  "dgSpecHash": "bBMHXCHYcBSsvbMWiP8qWrKq9kB1lxkKL2mcSSjdIHDd6GtISrLM3ykti6pCa9DzhG6t4ROSToKJ4OtYqWlUAw==",
   "success": true,
-  "projectFilePath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
+  "projectFilePath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

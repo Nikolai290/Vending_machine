@@ -749,11 +749,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj",
+      "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj",
       "projectName": "Vending_machine.Domain.Implementation",
-      "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj",
+      "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\Vending_machine.Domain.Implementation.csproj",
       "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-      "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\obj\\",
+      "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Implementation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -770,14 +770,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
-              "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
+            "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
+              "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
             },
-            "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {
-              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj"
+            "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj": {
+              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Interfaces\\Vending_machine.Domain.Interfaces.csproj"
             },
-            "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {
-              "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj"
+            "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj": {
+              "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Domain.Settings\\Vending_machine.Domain.Settings.csproj"
             }
           }
         }

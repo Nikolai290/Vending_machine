@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gaq13ARsTVe48EbgCZTBvb/kcT9cME2oQmvP7i2Kt79ZN86uOMy1cBjrlXzoJAwgIlsyuh1w1EGokkfjFRo8yw==",
+  "dgSpecHash": "hABogq0xxUp9GHdhH4vWYaSa4ECQvpXg6NmDgmXu0VTmvQlQ1rDW+o03AbpL+IMHB1RLs0iHRUOsGWfOlcqNbw==",
   "success": true,
-  "projectFilePath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj",
+  "projectFilePath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

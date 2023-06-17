@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj": {}
+    "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj": {}
   },
   "projects": {
-    "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
+    "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
+        "projectUniqueName": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
         "projectName": "Vending_machine.Entities",
-        "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
+        "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj",
         "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-        "outputPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\obj\\",
+        "outputPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj": {
+    "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj",
+        "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj",
         "projectName": "Vending_machine.Business.Dtos",
-        "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj",
+        "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj",
         "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-        "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\obj\\",
+        "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -114,14 +114,14 @@
         }
       }
     },
-    "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj": {
+    "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj",
+        "projectUniqueName": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj",
         "projectName": "Vending_machine.Business.Interfaces",
-        "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj",
+        "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\Vending_machine.Business.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Nikolai\\.nuget\\packages\\",
-        "outputPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\obj\\",
+        "outputPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikolai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,11 +138,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
-                "projectPath": "D:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
+              "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj": {
+                "projectPath": "d:\\REPOS\\Vending_machine\\Core\\Vending_machine.Entities\\Vending_machine.Entities.csproj"
               },
-              "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj": {
-                "projectPath": "D:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj"
+              "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj": {
+                "projectPath": "d:\\REPOS\\Vending_machine\\Vending_machine.Business.Dtos\\Vending_machine.Business.Dtos.csproj"
               }
             }
           }
