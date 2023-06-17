@@ -1,0 +1,17 @@
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Interfaces.deps.json
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Interfaces.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Interfaces.pdb
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Dtos.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Entities.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Entities.pdb
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\bin\Debug\net7.0\Vending_machine.Business.Dtos.pdb
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.csproj.AssemblyReference.cache
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.AssemblyInfoInputs.cache
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.AssemblyInfo.cs
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.csproj.CoreCompileInputs.cache
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.csproj.CopyComplete
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\refint\Vending_machine.Business.Interfaces.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\Vending_machine.Business.Interfaces.pdb
+D:\REPOS\Vending_machine\Vending_machine.Business.Interfaces\obj\Debug\net7.0\ref\Vending_machine.Business.Interfaces.dll

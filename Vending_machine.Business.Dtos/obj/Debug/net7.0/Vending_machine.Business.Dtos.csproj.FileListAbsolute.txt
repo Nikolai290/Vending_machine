@@ -1,0 +1,12 @@
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\bin\Debug\net7.0\Vending_machine.Business.Dtos.deps.json
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\bin\Debug\net7.0\Vending_machine.Business.Dtos.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\bin\Debug\net7.0\Vending_machine.Business.Dtos.pdb
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.csproj.AssemblyReference.cache
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.AssemblyInfoInputs.cache
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.AssemblyInfo.cs
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.csproj.CoreCompileInputs.cache
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\refint\Vending_machine.Business.Dtos.dll
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\Vending_machine.Business.Dtos.pdb
+D:\REPOS\Vending_machine\Vending_machine.Business.Dtos\obj\Debug\net7.0\ref\Vending_machine.Business.Dtos.dll

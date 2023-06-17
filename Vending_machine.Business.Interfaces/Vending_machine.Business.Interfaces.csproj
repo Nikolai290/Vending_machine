@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core\Vending_machine.Entities\Vending_machine.Entities.csproj" />
+      <ProjectReference Include="..\Vending_machine.Business.Dtos\Vending_machine.Business.Dtos.csproj" />
+    </ItemGroup>
+
+</Project>

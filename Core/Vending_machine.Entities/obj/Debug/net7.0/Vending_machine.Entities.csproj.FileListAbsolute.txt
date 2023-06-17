@@ -1,0 +1,12 @@
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\bin\Debug\net7.0\Vending_machine.Entities.deps.json
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\bin\Debug\net7.0\Vending_machine.Entities.dll
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\bin\Debug\net7.0\Vending_machine.Entities.pdb
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.csproj.AssemblyReference.cache
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.AssemblyInfoInputs.cache
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.AssemblyInfo.cs
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.csproj.CoreCompileInputs.cache
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.dll
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\refint\Vending_machine.Entities.dll
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\Vending_machine.Entities.pdb
+D:\REPOS\Vending_machine\Core\Vending_machine.Entities\obj\Debug\net7.0\ref\Vending_machine.Entities.dll

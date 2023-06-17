@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Vending_machine.Business.Interfaces/1.0.0": {
+        "dependencies": {
+          "Vending_machine.Business.Dtos": "1.0.0",
+          "Vending_machine.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Vending_machine.Business.Interfaces.dll": {}
+        }
+      },
+      "Vending_machine.Business.Dtos/1.0.0": {
+        "runtime": {
+          "Vending_machine.Business.Dtos.dll": {}
+        }
+      },
+      "Vending_machine.Entities/1.0.0": {
+        "runtime": {
+          "Vending_machine.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vending_machine.Business.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Vending_machine.Business.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Vending_machine.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
