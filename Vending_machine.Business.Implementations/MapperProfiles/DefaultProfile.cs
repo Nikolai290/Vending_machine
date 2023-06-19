@@ -10,9 +10,9 @@ public class DefaultProfile : Profile
 {
     public DefaultProfile()
     {
-        CreateMap<CoinCreateDto, Coin>();
-        CreateMap<CoinUpdateDto, Coin>();
-        CreateMap<Coin, CoinOutDto>();
+        CreateMap<CoinTypeCreateDto, CoinType>();
+        CreateMap<CoinTypeUpdateDto, CoinType>();
+        CreateMap<CoinType, CoinTypeOutDto>();
 
         CreateMap<ProductCreateDto, Product>();
         CreateMap<ProductUpdateDto, Product>();
@@ -22,9 +22,6 @@ public class DefaultProfile : Profile
         CreateMap<ManufacturerCreateDto, Manufacturer>();
         CreateMap<ManufacturerUpdateDto, Manufacturer>();
         CreateMap<Manufacturer, ManufacturerShortOutDto>();
-        CreateMap<Manufacturer, ManufacturerOutDto>()
-            .ForMember(dest => dest.ProductIds, 
-            opt => opt
-                .MapFrom((source,dest) =>  dest.ProductIds = source.Products.Select(x => x.Id).ToList()));
+        CreateMap<Manufacturer, ManufacturerOutDto>();
     }
 }

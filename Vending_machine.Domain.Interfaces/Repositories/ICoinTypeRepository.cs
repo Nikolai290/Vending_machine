@@ -2,7 +2,7 @@
 
 namespace Vending_machine.Domain.Interfaces.Repositories;
 
-public interface ICoinRepository : IBaseCrudRepository<Coin>
+public interface ICoinTypeRepository : IBaseCrudRepository<CoinType>
 {
     
 }

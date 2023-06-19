@@ -4,9 +4,9 @@ using Vending_machine.Entities;
 
 namespace Vending_machine.Domain.Implementation.Repositories;
 
-public class CoinRepository : BaseCrudRepository<Coin>, ICoinRepository
+public class CoinTypeTypeRepository : BaseCrudRepository<CoinType>, ICoinTypeRepository
 {
-    public CoinRepository(DbContext dbDBcontext) : base(dbDBcontext)
+    public CoinTypeTypeRepository(DbContext dbDBcontext) : base(dbDBcontext)
     {
     }
 }

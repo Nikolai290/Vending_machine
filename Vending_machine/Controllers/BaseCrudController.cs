@@ -7,19 +7,20 @@ namespace Vending_machine.Controllers;
 [Route("[controller]")]
 public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBase
 {
-    private readonly IBaseCrudService<TCreateDto, TUpdateDto, TOutDto> _baseCrudService;
+    private readonly IBaseCrudService<TCreateDto, TUpdateDto, TOutDto> _baseCrudTypeService;
 
-    public BaseCrudController(IBaseCrudService<TCreateDto, TUpdateDto, TOutDto> baseCrudService)
+    public BaseCrudController(IBaseCrudService<TCreateDto, TUpdateDto, TOutDto> baseCrudTypeService)
     {
-        _baseCrudService = baseCrudService;
+        _baseCrudTypeService = baseCrudTypeService;
     }
     
     [HttpGet("GetAll")]
     public async Task<ActionResult<IEnumerable<TOutDto>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
+        var foo = User.Identity;
         try
         {
-            var outDto = await _baseCrudService.GetAllAsync(cancellationToken);
+            var outDto = await _baseCrudTypeService.GetAllAsync(cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -33,7 +34,7 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     {
         try
         {
-            var outDto = await _baseCrudService.GetByIdAsync(Id, cancellationToken);
+            var outDto = await _baseCrudTypeService.GetByIdAsync(Id, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -47,7 +48,7 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     {
         try
         {
-            var outDto = await _baseCrudService.CreateAsync(dto, cancellationToken);
+            var outDto = await _baseCrudTypeService.CreateAsync(dto, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -61,7 +62,7 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     {
         try
         {
-            var outDto = await _baseCrudService.UpdateAsync(id, dto, cancellationToken);
+            var outDto = await _baseCrudTypeService.UpdateAsync(id, dto, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)
@@ -75,7 +76,7 @@ public class BaseCrudController<TCreateDto, TUpdateDto, TOutDto> : ControllerBas
     {
         try
         {
-            var outDto = await _baseCrudService.DeleteAsync(id, cancellationToken);
+            var outDto = await _baseCrudTypeService.DeleteAsync(id, cancellationToken);
             return Ok(outDto);
         }
         catch (Exception e)

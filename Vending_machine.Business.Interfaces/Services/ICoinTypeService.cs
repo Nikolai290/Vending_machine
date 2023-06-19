@@ -2,7 +2,7 @@
 
 namespace Vending_machine.Business.Interfaces.Services;
 
-public interface ICoinService : IBaseCrudService<CoinCreateDto, CoinUpdateDto, CoinOutDto>
+public interface ICoinTypeService : IBaseCrudService<CoinTypeCreateDto, CoinTypeUpdateDto, CoinTypeOutDto>
 {
     
 }

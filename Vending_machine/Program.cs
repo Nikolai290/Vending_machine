@@ -1,6 +1,8 @@
 
+using Microsoft.Extensions.Options;
 using Vending_machine.Business.Implementations.MapperProfiles;
 using Vending_machine.DI;
+using Vending_machine.Domain.Settings;
 
 namespace Vending_machine
 {
@@ -10,16 +12,21 @@ namespace Vending_machine
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var configuration = builder.Configuration;
+
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddSwaggerGen();
+            
             builder.Services.AddRepositories();
             builder.Services.AddAutoMapper(typeof(DefaultProfile));
             builder.Services.AddServices();
 
+            builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings"));
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

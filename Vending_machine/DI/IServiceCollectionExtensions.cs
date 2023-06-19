@@ -17,22 +17,22 @@ public static class IServiceCollectionExtensions
     {
         services.AddScoped<DbContext, PostgresContext>();
 
-        services.AddScoped<IBaseCrudRepository<Coin>, BaseCrudRepository<Coin>>();
+        services.AddScoped<IBaseCrudRepository<CoinType>, BaseCrudRepository<CoinType>>();
         services.AddScoped<IBaseCrudRepository<Product>, BaseCrudRepository<Product>>();
         services.AddScoped<IBaseCrudRepository<Manufacturer>, BaseCrudRepository<Manufacturer>>();
         
-        services.AddScoped<ICoinRepository, CoinRepository>();
+        services.AddScoped<ICoinTypeRepository, CoinTypeTypeRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IManufacturerRepository, ManufactorerRepository>();
     }
 
     public static void AddServices(this IServiceCollection services)
     {
-        services.AddScoped<IBaseCrudService<CoinCreateDto, CoinUpdateDto, CoinOutDto>, CoinService>();
+        services.AddScoped<IBaseCrudService<CoinTypeCreateDto, CoinTypeUpdateDto, CoinTypeOutDto>, CoinTypeTypeService>();
         services.AddScoped<IBaseCrudService<ProductCreateDto, ProductUpdateDto, ProductOutDto>, ProductService>();
         services.AddScoped<IBaseCrudService<ManufacturerCreateDto, ManufacturerUpdateDto, ManufacturerOutDto>, ManufacturerService>();
         
-        services.AddScoped<ICoinService, CoinService>();
+        services.AddScoped<ICoinTypeService, CoinTypeTypeService>();
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<IManufacturerService, ManufacturerService>();
     }

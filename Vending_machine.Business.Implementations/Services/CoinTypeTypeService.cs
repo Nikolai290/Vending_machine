@@ -6,9 +6,9 @@ using Vending_machine.Entities;
 
 namespace Vending_machine.Business.Implementations.Services;
 
-public class CoinService : BaseCrudService<Coin, CoinCreateDto, CoinUpdateDto, CoinOutDto>, ICoinService
+public class CoinTypeTypeService : BaseCrudService<CoinType, CoinTypeCreateDto, CoinTypeUpdateDto, CoinTypeOutDto>, ICoinTypeService
 {
-    public CoinService(IBaseCrudRepository<Coin> repository, IMapper mapper) : base(repository, mapper)
+    public CoinTypeTypeService(IBaseCrudRepository<CoinType> repository, IMapper mapper) : base(repository, mapper)
     {
     }
 }
