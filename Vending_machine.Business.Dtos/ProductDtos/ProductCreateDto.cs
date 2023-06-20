@@ -3,6 +3,7 @@
 public class ProductCreateDto
 {
     public string Name { get; set; }
+    public string Image { get; set; }
     public int Cost { get; set; }
-    public int ManufacturerId { get; set; }
+    public int Stock { get; set; }
 }

@@ -2,5 +2,5 @@
 
 public class RequestMoneyChangeOutDto
 {
-    
+    public IEnumerable<CoinTypeQuantityPair> MoneyChange { get; set; }
 }
