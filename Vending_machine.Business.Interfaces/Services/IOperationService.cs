@@ -4,8 +4,8 @@ namespace Vending_machine.Business.Interfaces.Services;
 
 public interface IOperationService
 {
-    Task<int> GetCustomerBalanceAsync();
-    Task InsertCoinAsync (int coinId);
-    Task TryBuyProductAsync (int productId);
-    Task<RequestMoneyChangeOutDto> RequestMoneyChangeAsync();
+    Task<int> GetCustomerBalanceAsync(CancellationToken cancellationToken);
+    Task InsertCoinAsync (int coinId, CancellationToken cancellationToken);
+    Task TryBuyProductAsync (int productId, CancellationToken cancellationToken);
+    Task<MoneyChangeOutDto> RequestMoneyChangeAsync(CancellationToken cancellationToken);
 }

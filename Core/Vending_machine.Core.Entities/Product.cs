@@ -6,4 +6,5 @@ public class Product : BaseDbEntity
     public string Image { get; set; }
     public int Cost { get; set; }
     public int Stock { get; set; }
+    public IEnumerable<Operation> Operation { get; set; }
 }

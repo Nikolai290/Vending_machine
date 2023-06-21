@@ -12,5 +12,6 @@ public interface IBaseCrudRepository<TEntity> : IDisposable
     Task<IEnumerable<TEntity>> GetAllAsync(CancellationToken cancellationToken);
     Task<TEntity> CreateAsync(TEntity obj, CancellationToken cancellationToken);
     Task<TEntity> UpdateAsync(TEntity obj, CancellationToken cancellationToken);
+    Task UpdateRangeAsync(IEnumerable<TEntity> obj, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
 }

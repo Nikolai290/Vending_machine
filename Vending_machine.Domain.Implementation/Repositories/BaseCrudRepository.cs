@@ -71,6 +71,12 @@ public class BaseCrudRepository<TEntity> : IBaseCrudRepository<TEntity> where TE
         return result.Entity;
     }
 
+    public async Task UpdateRangeAsync(IEnumerable<TEntity> obj, CancellationToken cancellationToken)
+    {
+        _dbSet.UpdateRange(obj);
+        await _dBcontext.SaveChangesAsync(cancellationToken);
+    }
+
     public virtual async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
     {
         try

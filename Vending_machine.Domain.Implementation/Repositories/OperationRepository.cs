@@ -9,4 +9,14 @@ public class OperationRepository : BaseCrudRepository<Operation>, IOperationRepo
     public OperationRepository(DbContext dbContext) : base(dbContext)
     {
     }
+
+    public async Task<int> GetCustomerRepositoryAsync(CancellationToken cancellationToken)
+    {
+        var result = await _dbSet
+            .OrderByDescending(operation => operation.OperationDatetime)
+            .Take(1)
+            .SingleAsync(cancellationToken);
+        
+        return result.CustomerBalance;
+    }
 }

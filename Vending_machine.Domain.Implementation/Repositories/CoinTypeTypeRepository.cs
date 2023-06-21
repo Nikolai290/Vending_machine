@@ -9,4 +9,9 @@ public class CoinTypeTypeRepository : BaseCrudRepository<CoinType>, ICoinTypeRep
     public CoinTypeTypeRepository(DbContext dbDBcontext) : base(dbDBcontext)
     {
     }
+
+    public async Task<int> GetVendingBalanceAsync(CancellationToken cancellationToken)
+    {
+        return await _dbSet.SumAsync(coin => coin.Value * coin.Stock);
+    }
 }

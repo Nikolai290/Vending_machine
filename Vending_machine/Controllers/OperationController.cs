@@ -16,11 +16,11 @@ public class OperationController : ControllerBase
     }
 
     [HttpGet("GetCustomerBalance")]
-    public async Task<ActionResult<int>> GetCustomerBalanceAsync()
+    public async Task<ActionResult<int>> GetCustomerBalanceAsync(CancellationToken cancellationToken)
     {
         try
         {
-            var result = await _operationService.GetCustomerBalanceAsync();
+            var result = await _operationService.GetCustomerBalanceAsync(cancellationToken);
             return Ok(result);
         }
         catch (Exception e)
@@ -30,11 +30,11 @@ public class OperationController : ControllerBase
     }
     
     [HttpPost("InsertCoint/{coinId}")]
-    public async Task<ActionResult> InsertCoinAsync([FromRoute] int coinId)
+    public async Task<ActionResult> InsertCoinAsync([FromRoute] int coinId, CancellationToken cancellationToken)
     {
         try
         {
-            await _operationService.InsertCoinAsync(coinId);
+            await _operationService.InsertCoinAsync(coinId, cancellationToken);
             return Ok();
         }
         catch (Exception e)
@@ -44,11 +44,11 @@ public class OperationController : ControllerBase
     }
 
     [HttpPost("BuyProduct/{productId}")]
-    public async Task<ActionResult> TryBuyProductAsync([FromRoute] int productId)
+    public async Task<ActionResult> TryBuyProductAsync([FromRoute] int productId, CancellationToken cancellationToken)
     {
         try
         {
-            await _operationService.TryBuyProductAsync(productId);
+            await _operationService.TryBuyProductAsync(productId, cancellationToken);
             return Ok();
         }
         catch (Exception e)
@@ -58,11 +58,11 @@ public class OperationController : ControllerBase
     }
 
     [HttpPost("RequestMoneyChange")]
-    public async Task<ActionResult<RequestMoneyChangeOutDto>> RequestMoneyChangeAsync()
+    public async Task<ActionResult<MoneyChangeOutDto>> RequestMoneyChangeAsync(CancellationToken cancellationToken)
     {
         try
         {
-            var result = await _operationService.RequestMoneyChangeAsync();
+            var result = await _operationService.RequestMoneyChangeAsync(cancellationToken);
             return Ok(result);
         }
         catch (Exception e)

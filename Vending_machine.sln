@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vending_machine.Domain.Sett
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vending_machine.Business.Implementations", "Vending_machine.Business.Implementations\Vending_machine.Business.Implementations.csproj", "{C985E320-0E7D-4A23-BA5A-8F3BCECB2547}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{F1E455EE-2CD0-437D-A2DA-C2BDEC9F28D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vending_machine.Utilities.InitDatabase", "Vending_machine.Utilities.InitDatabase\Vending_machine.Utilities.InitDatabase.csproj", "{F005AFFF-EAFD-4FE9-A5EC-4E89696F7405}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,10 @@ Global
 		{C985E320-0E7D-4A23-BA5A-8F3BCECB2547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C985E320-0E7D-4A23-BA5A-8F3BCECB2547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C985E320-0E7D-4A23-BA5A-8F3BCECB2547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F005AFFF-EAFD-4FE9-A5EC-4E89696F7405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F005AFFF-EAFD-4FE9-A5EC-4E89696F7405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F005AFFF-EAFD-4FE9-A5EC-4E89696F7405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F005AFFF-EAFD-4FE9-A5EC-4E89696F7405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +86,6 @@ Global
 		{704DF331-28A1-4F7D-A9D8-46BE4F543C99} = {57B4B36A-160E-42C2-A9EB-F9EFB27775D8}
 		{F263644B-91BD-4295-9DEF-3DF8A528FAD2} = {57B4B36A-160E-42C2-A9EB-F9EFB27775D8}
 		{C985E320-0E7D-4A23-BA5A-8F3BCECB2547} = {175ED7D7-6772-45CD-8C67-F18BB5566199}
+		{F005AFFF-EAFD-4FE9-A5EC-4E89696F7405} = {F1E455EE-2CD0-437D-A2DA-C2BDEC9F28D3}
 	EndGlobalSection
 EndGlobal

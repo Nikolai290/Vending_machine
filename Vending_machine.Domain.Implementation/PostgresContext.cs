@@ -23,6 +23,15 @@ public class PostgresContext : DbContext, IDbContext
         };
         Database.EnsureCreated();
     }
+    
+    public PostgresContext(string connectionString)
+    {
+        _dbSettings = new DbSettings()
+        {
+            ConnectionString = connectionString
+        };
+        Database.EnsureCreated();
+    }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
