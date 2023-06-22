@@ -15,11 +15,22 @@ Console.WriteLine("Прочтены настройки appsettings.");
 var dbContext = new PostgresContext(connectionString);
 Console.WriteLine("Инициализирован экземпляр dbContext.");
 
-await dbContext.CoinTypes.AddRangeAsync(DataSet.CoinTypes);
-Console.WriteLine("Заполнена таблица CoinTypes.");
+Console.WriteLine("Проверка заполненности таблицы CoinTypes.");
+if (!dbContext.CoinTypes.Any())
+{
+    Console.WriteLine("Таблица CoinTypes не заполнена. Начинается заполнение.");
+    await dbContext.CoinTypes.AddRangeAsync(DataSet.CoinTypes);
+    Console.WriteLine("Заполнена таблица CoinTypes.");
+}
 
-await dbContext.Products.AddRangeAsync(DataSet.Products);
-Console.WriteLine("Заполнена таблица Products.");
+Console.WriteLine("Проверка заполненности таблицы Products.");
+if (!dbContext.Products.Any())
+{
+    Console.WriteLine("Таблица Products не заполнена. Начинается заполнение.");
+    await dbContext.Products.AddRangeAsync(DataSet.Products);
+    Console.WriteLine("Заполнена таблица Products.");
+}
+
 
 await dbContext.SaveChangesAsync();
 Console.WriteLine("Инициализация завершена.");
