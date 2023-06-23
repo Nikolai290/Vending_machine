@@ -6,7 +6,7 @@ namespace Vending_machine.Domain.Implementation.Repositories;
 
 public class CoinTypeTypeRepository : BaseCrudRepository<CoinType>, ICoinTypeRepository
 {
-    public CoinTypeTypeRepository(DbContext dbDBcontext) : base(dbDBcontext)
+    public CoinTypeTypeRepository(PostgresContext dbDBcontext) : base(dbDBcontext)
     {
     }
 

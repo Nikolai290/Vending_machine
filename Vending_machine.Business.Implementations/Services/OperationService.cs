@@ -52,6 +52,7 @@ public class OperationService : IOperationService
         };
         await _coinTypeRepository.UpdateAsync(coin, cancellationToken);
         await _operationRepostory.CreateAsync(operation, cancellationToken);
+        await _coinTypeRepository.SaveAsync(cancellationToken);
     }
 
     public async Task TryBuyProductAsync(int productId, CancellationToken cancellationToken)
@@ -62,6 +63,8 @@ public class OperationService : IOperationService
         {
             throw new Exception("Недостаточно средств.");
         }
+
+        product.Stock--;
 
         var operation = new Operation()
         {
@@ -74,6 +77,7 @@ public class OperationService : IOperationService
             ChangeInfo = ""
         };
         await _operationRepostory.CreateAsync(operation, cancellationToken);
+        await _coinTypeRepository.SaveAsync(cancellationToken);
     }
 
     public async Task<MoneyChangeOutDto> RequestMoneyChangeAsync(CancellationToken cancellationToken)
@@ -95,7 +99,10 @@ public class OperationService : IOperationService
         {
            var (coinTypeQuantityPair, newBalance) = GetCoinTypeQuantityPairAsync(coin, customerBalance);
            customerBalance = newBalance;
-           coinTypeQuantityPairs.Add(coinTypeQuantityPair);
+           if (coinTypeQuantityPair.Quantity > 0)
+           {
+                coinTypeQuantityPairs.Add(coinTypeQuantityPair);
+           }
            if (customerBalance == 0)
            {
                break;
@@ -121,7 +128,7 @@ public class OperationService : IOperationService
         };
         await _operationRepostory.CreateAsync(operation, cancellationToken);
         await _coinTypeRepository.UpdateRangeAsync(coins, cancellationToken);
-
+        await _coinTypeRepository.SaveAsync(cancellationToken);
 
         return moneyChangeOutDto;
     }

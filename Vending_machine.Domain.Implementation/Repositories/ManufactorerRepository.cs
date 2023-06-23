@@ -6,7 +6,7 @@ namespace Vending_machine.Domain.Implementation.Repositories;
 
 public class ManufactorerRepository : BaseCrudRepository<Manufacturer>, IManufacturerRepository
 {
-    public ManufactorerRepository(DbContext dbContext) : base(dbContext)
+    public ManufactorerRepository(PostgresContext dbContext) : base(dbContext)
     {
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Vending_machine.Business.Dtos.CoinDtos;
+﻿using Vending_machine.Business.Dtos.CoinDtos;
 using Vending_machine.Business.Dtos.ManufacturerDtos;
 using Vending_machine.Business.Dtos.ProductDtos;
 using Vending_machine.Business.Implementations.Services;
@@ -15,7 +14,7 @@ public static class IServiceCollectionExtensions
 {
     public static void AddRepositories(this IServiceCollection services)
     {
-        services.AddScoped<DbContext, PostgresContext>();
+        services.AddScoped<PostgresContext, PostgresContext>();
 
         services.AddScoped<IBaseCrudRepository<CoinType>, BaseCrudRepository<CoinType>>();
         services.AddScoped<IBaseCrudRepository<Product>, BaseCrudRepository<Product>>();
@@ -24,6 +23,7 @@ public static class IServiceCollectionExtensions
         services.AddScoped<ICoinTypeRepository, CoinTypeTypeRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IManufacturerRepository, ManufactorerRepository>();
+        services.AddScoped<IOperationRepostory, OperationRepository>();
     }
 
     public static void AddServices(this IServiceCollection services)
@@ -35,5 +35,6 @@ public static class IServiceCollectionExtensions
         services.AddScoped<ICoinTypeService, CoinTypeTypeService>();
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<IManufacturerService, ManufacturerService>();
+        services.AddScoped<IOperationService, OperationService>();
     }
 }

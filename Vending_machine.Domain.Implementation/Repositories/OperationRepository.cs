@@ -6,13 +6,18 @@ namespace Vending_machine.Domain.Implementation.Repositories;
 
 public class OperationRepository : BaseCrudRepository<Operation>, IOperationRepostory
 {
-    public OperationRepository(DbContext dbContext) : base(dbContext)
+    public OperationRepository(PostgresContext dbContext) : base(dbContext)
     {
     }
 
     public async Task<int> GetCustomerRepositoryAsync(CancellationToken cancellationToken)
     {
-        var result = await _dbSet
+        if (!_dBcontext.Operations.Any())
+        {
+            return 0;
+        }
+        
+        var result = await _dBcontext.Operations
             .OrderByDescending(operation => operation.OperationDatetime)
             .Take(1)
             .SingleAsync(cancellationToken);

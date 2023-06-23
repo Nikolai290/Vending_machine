@@ -9,11 +9,11 @@ public class BaseCrudRepository<TEntity> : IBaseCrudRepository<TEntity> where TE
 {
     private bool disposed = false;
     
-    protected readonly DbContext _dBcontext;
+    protected readonly PostgresContext _dBcontext;
 
     protected readonly DbSet<TEntity> _dbSet;
 
-    public BaseCrudRepository(DbContext dbContext)
+    public BaseCrudRepository(PostgresContext dbContext)
     {
         _dBcontext = dbContext;
         _dbSet = dbContext.Set<TEntity>();
@@ -60,14 +60,12 @@ public class BaseCrudRepository<TEntity> : IBaseCrudRepository<TEntity> where TE
     public virtual async Task<TEntity> CreateAsync(TEntity obj, CancellationToken cancellationToken)
     {
         var result = await _dbSet.AddAsync(obj, cancellationToken);
-        await _dBcontext.SaveChangesAsync(cancellationToken);
         return result.Entity;
     }
 
     public virtual async Task<TEntity> UpdateAsync(TEntity obj, CancellationToken cancellationToken)
     {
         var result = _dbSet.Update(obj);
-        await _dBcontext.SaveChangesAsync(cancellationToken);
         return result.Entity;
     }
 

@@ -6,7 +6,7 @@ namespace Vending_machine.Domain.Implementation.Repositories;
 
 public class ProductRepository : BaseCrudRepository<Product>, IProductRepository
 {
-    public ProductRepository(DbContext dbContext) : base(dbContext)
+    public ProductRepository(PostgresContext dbContext) : base(dbContext)
     {
     }
 }
