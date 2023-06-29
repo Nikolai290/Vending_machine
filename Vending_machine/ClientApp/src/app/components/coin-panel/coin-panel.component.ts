@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Coin} from "../../Models/Coin";
 
 @Component({
   selector: 'app-coin-panel',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./coin-panel.component.css']
 })
 export class CoinPanelComponent {
+  @Input() coins: Coin[] = [];
+  @Output() onCoinClick = new EventEmitter<number>();
 
+
+  coinClickHandler(coinId: number): void {
+    this.onCoinClick.emit(coinId)
+  }
 }

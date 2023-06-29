@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 using Vending_machine.Business.Implementations.MapperProfiles;
 using Vending_machine.DI;
@@ -26,6 +27,18 @@ namespace Vending_machine
             builder.Services.AddServices();
 
             builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings"));
+            var allowOrigins = builder.Configuration.GetSection("AllowOrigins").Value;
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: "DefaultPolicy",
+                    policy =>
+                    {
+                        policy
+                            .WithOrigins(allowOrigins)
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
             
             var app = builder.Build();
 
@@ -37,6 +50,7 @@ namespace Vending_machine
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("DefaultPolicy");
 
             app.UseAuthorization();
 

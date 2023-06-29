@@ -29,7 +29,7 @@ public class OperationController : ControllerBase
         }
     }
     
-    [HttpPost("InsertCoint/{coinId}")]
+    [HttpPost("InsertCoin/{coinId}")]
     public async Task<ActionResult> InsertCoinAsync([FromRoute] int coinId, CancellationToken cancellationToken)
     {
         try

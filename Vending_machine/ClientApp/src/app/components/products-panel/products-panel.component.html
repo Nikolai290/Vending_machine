@@ -1,0 +1,5 @@
+<div  class="flex-container products-panel">
+    <div *ngFor="let product of products">
+      <app-product [product]="product" (onProductBuy)="productClickHandler($event)"></app-product>
+    </div>
+</div>

@@ -1,4 +1,7 @@
 <div>
-  <app-coin-panel></app-coin-panel>
-  <p>main works!</p>
+  <app-modal-window [isShow]="isShowModal" (showToggleEvent)="showModalHandler($event)"></app-modal-window>
+  <div>Баланс покупателя: <span>{{customerBalance}}</span> р.</div>
+  <app-coin-panel [coins]="coins" (onCoinClick)="coinClickHandler($event)"></app-coin-panel>
+  <app-products-panel [products]="products" (onProductBuy)="productClickHandler($event)"></app-products-panel>
+  <button (click)="showModalHandler(true)">Show modal toggler</button>
 </div>

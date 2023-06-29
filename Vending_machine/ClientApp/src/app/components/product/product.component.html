@@ -1,0 +1,7 @@
+<div *ngIf="product">
+  <button class="product-card" (click)="onClickHandler()">
+    <h5>{{product.name}}</h5>
+    <p>Цена: <span>{{product.cost}} р.</span></p>
+    <p>Остаток: <span>{{product.stock}} шт.</span></p>
+  </button>
+</div>
