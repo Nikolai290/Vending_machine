@@ -48,8 +48,8 @@ public class OperationController : ControllerBase
     {
         try
         {
-            await _operationService.TryBuyProductAsync(productId, cancellationToken);
-            return Ok();
+            var result = await _operationService.TryBuyProductAsync(productId, cancellationToken);
+            return Ok(result);
         }
         catch (Exception e)
         {

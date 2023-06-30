@@ -1,7 +1,18 @@
 <div>
-  <app-modal-window [isShow]="isShowModal" (showToggleEvent)="showModalHandler($event)"></app-modal-window>
-  <div>Баланс покупателя: <span>{{customerBalance}}</span> р.</div>
-  <app-coin-panel [coins]="coins" (onCoinClick)="coinClickHandler($event)"></app-coin-panel>
-  <app-products-panel [products]="products" (onProductBuy)="productClickHandler($event)"></app-products-panel>
-  <button (click)="showModalHandler(true)">Show modal toggler</button>
+  <app-modal-window [isShow]="isShowModal" (showToggleEvent)="showModalHandler($event)">
+    <app-money-change-info [moneyChangeInfo]="moneyChangeInfo"></app-money-change-info>
+    <app-purchased-product [purchasedProduct]="purchasedProduct"></app-purchased-product>
+  </app-modal-window>
+  <div class="main-content">
+    <div class="mgtop20">Баланс покупателя: <span>{{customerBalance}}</span> р.</div>
+    <div class="mgtop20">
+      <app-coin-panel [coins]="coins" (onCoinClick)="coinClickHandler($event)"></app-coin-panel>
+    </div>
+    <div class="mgtop20">
+      <app-products-panel [products]="products" (onProductBuy)="productClickHandler($event)"></app-products-panel>
+    </div>
+    <div class="mgtop20">
+      <button (click)="requestMoneyChangeClickHandler()">Запросить сдачу</button>
+    </div>
+  </div>
 </div>

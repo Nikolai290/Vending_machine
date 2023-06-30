@@ -3,6 +3,7 @@ using System.Text.Json;
 using AutoMapper;
 using Vending_machine.Business.Dtos.CoinDtos;
 using Vending_machine.Business.Dtos.OperationsDtos;
+using Vending_machine.Business.Dtos.ProductDtos;
 using Vending_machine.Business.Interfaces.Services;
 using Vending_machine.Domain.Interfaces.Repositories;
 using Vending_machine.Entities;
@@ -55,7 +56,7 @@ public class OperationService : IOperationService
         await _coinTypeRepository.SaveAsync(cancellationToken);
     }
 
-    public async Task TryBuyProductAsync(int productId, CancellationToken cancellationToken)
+    public async Task<ProductOutDto> TryBuyProductAsync(int productId, CancellationToken cancellationToken)
     {
         var product = await _productRepository.GetByIdAsync(productId, cancellationToken);
         var customerBalance = await _operationRepostory.GetCustomerRepositoryAsync(cancellationToken);
@@ -78,6 +79,9 @@ public class OperationService : IOperationService
         };
         await _operationRepostory.CreateAsync(operation, cancellationToken);
         await _coinTypeRepository.SaveAsync(cancellationToken);
+
+        var result = _mapper.Map<ProductOutDto>(product);
+        return result;
     }
 
     public async Task<MoneyChangeOutDto> RequestMoneyChangeAsync(CancellationToken cancellationToken)
@@ -89,6 +93,8 @@ public class OperationService : IOperationService
         {
             return moneyChangeOutDto;
         }
+
+        moneyChangeOutDto.MoneyChangeSummary = customerBalance;
 
         var coinTypeQuantityPairs = new List<CoinTypeQuantityPair>();
 

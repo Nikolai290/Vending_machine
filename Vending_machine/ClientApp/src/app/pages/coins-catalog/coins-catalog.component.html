@@ -1,0 +1,6 @@
+<div>
+  <p>coins catalog works!</p>
+  <div *ngIf="data && fields && fields.length > 0">
+    <app-table [data]="data" [columnInfo]="fields"></app-table>
+  </div>
+</div>

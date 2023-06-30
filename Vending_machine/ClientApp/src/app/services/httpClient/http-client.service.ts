@@ -1,5 +1,5 @@
 import {HttpClient} from "@angular/common/http";
-import {ICoin, CreateCoin, UpdateCoin, Coin} from "../../Models/Coin";
+import {ICoinShort, CreateCoin, UpdateCoin, ICoinFull} from "../../Models/ICoin";
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs";
 import {IProduct} from "../../Models/IProduct";
@@ -15,12 +15,17 @@ export class HttpClientService {
 
   constructor(private http: HttpClient) { }
 
-  getAllCoins() : Observable<ICoin[]> {
-    return this.http.get<ICoin[]>(this.baseUrl.concat(this.coinControllerUrl, "GetAll"));
+  getAllCoins() : Observable<ICoinShort[]> {
+    return this.http.get<ICoinShort[]>(this.baseUrl.concat(this.coinControllerUrl, "GetAll"));
   }
 
-  getCoinById(id:number) : Observable<ICoin> {
-    return this.http.get<ICoin>(this.baseUrl.concat(this.coinControllerUrl, "GetById/", id.toString()))
+  getAllCoinFulls() : Observable<ICoinFull[]> {
+    return this.http.get<ICoinFull[]>(this.baseUrl.concat(this.coinControllerUrl, "GetAllFull"));
+  }
+
+
+  getCoinById(id:number) : Observable<ICoinShort> {
+    return this.http.get<ICoinShort>(this.baseUrl.concat(this.coinControllerUrl, "GetById/", id.toString()))
   }
 
   createCoin(coin: CreateCoin) : Observable<any> {

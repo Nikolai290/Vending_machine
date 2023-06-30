@@ -2,5 +2,6 @@
 
 export interface IMoneyChangeResponse
 {
+  moneyChangeSummary: number;
   moneyChange: IMoneyChange[]
 }

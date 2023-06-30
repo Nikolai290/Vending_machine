@@ -1,0 +1,22 @@
+.nav-panel {
+  border: 1px solid black;
+  border-bottom: 0px;
+  background-color: cadetblue;
+  max-width: 900px;
+  width: 99vw;
+  display: flex;
+  height: 50px;
+}
+.nav-btn {
+  display: inline-flex;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.nav-btn-active {
+  border-bottom: 0px;
+  font-weight: bold;
+}

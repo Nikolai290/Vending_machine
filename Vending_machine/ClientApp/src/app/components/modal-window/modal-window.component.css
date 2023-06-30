@@ -5,15 +5,23 @@
   width: 100%;
   height: 100%;
   background-color: rgba(50,50,50,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal-window {
   border: 3px solid gray;
   border-radius: 10px;
   width: 500px;
-  height: 200px;
   background-color: aqua;
   margin: auto;
-  position: relative;
-  top: 40vh;
-  padding: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-button-block {
+}
+.modal-content {
+  text-align: center;
 }

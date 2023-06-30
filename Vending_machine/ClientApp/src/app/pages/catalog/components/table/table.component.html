@@ -1,0 +1,16 @@
+<table>
+  <thead>
+  <tr>
+    <th  *ngFor="let column of columnInfo" >{{column.humanName}}</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngfor="let item of data">
+      <td *ngFor="let column of columnInfo">
+        <span *ngIf="item[column.fieldName] !== undefined">
+          {{item[column.fieldName]}}
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -13,6 +13,7 @@ public class DefaultProfile : Profile
         CreateMap<CoinTypeCreateDto, CoinType>();
         CreateMap<CoinTypeUpdateDto, CoinType>();
         CreateMap<CoinType, CoinTypeOutDto>();
+        CreateMap<CoinType, CoinTypeFullOutDto>();
 
         CreateMap<ProductCreateDto, Product>();
         CreateMap<ProductUpdateDto, Product>();

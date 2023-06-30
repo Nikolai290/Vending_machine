@@ -1,6 +1,10 @@
 <div *ngIf="isShow" class="modal-back">
   <div class="modal-window">
-    <p>modal-window works!</p>
-    <button (click)="hideModal()">OK</button>
+    <div class="modal-content">
+      <ng-content></ng-content>
+    </div>
+    <div class="modal-button-block">
+      <button (click)="hideModal()">OK</button>
+    </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClientService} from "../../services/httpClient/http-client.service";
-import {ICoin} from "../../Models/Coin";
+import {ICoinShort} from "../../Models/ICoin";
 import {IProduct} from "../../Models/IProduct";
 import {Sort} from "../../extensions/Sort";
 import {IMoneyChangeResponse} from "../../Models/IMoneyChangeResponse";
@@ -11,12 +11,12 @@ import {IMoneyChangeResponse} from "../../Models/IMoneyChangeResponse";
 })
 export class MainComponent implements OnInit{
 
-  coins: ICoin[] = [];
+  coins: ICoinShort[] = [];
   products: IProduct[] = [];
   customerBalance: number = 0;
-  moneyChange:IMoneyChangeResponse | undefined;
-
+  moneyChangeInfo:IMoneyChangeResponse | undefined;
   isShowModal:boolean = false;
+  purchasedProduct: IProduct | undefined;
 
 
   constructor(private httpClientService: HttpClientService) {
@@ -33,20 +33,27 @@ export class MainComponent implements OnInit{
   }
 
   productClickHandler(productId: number) {
-    this.httpClientService.buyProduct(productId).subscribe(() => {
+    this.httpClientService.buyProduct(productId).subscribe(response => {
+      this.purchasedProduct = response;
       this.updateCustomerBalance();
       this.updateProducts();
+      this.showModalHandler(true)
     })
   }
 
   requestMoneyChangeClickHandler(){
     this.httpClientService.requestMoneyChange().subscribe((response)=>{
-      this.moneyChange = response;
+      this.moneyChangeInfo = response;
       this.updateCustomerBalance();
+      this.showModalHandler(true)
     })
   }
 
   showModalHandler(show: boolean) {
+    if(show == false){
+      this.moneyChangeInfo = undefined;
+      this.purchasedProduct = undefined;
+    }
     this.isShowModal = show;
   }
 

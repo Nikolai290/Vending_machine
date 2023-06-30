@@ -1,0 +1,8 @@
+<div *ngIf="moneyChangeInfo">
+  <div *ngIf="moneyChangeInfo.moneyChange">
+    <p>Получите сдачу: <span>{{moneyChangeInfo.moneyChangeSummary}} р.</span></p>
+    <div *ngFor="let info of moneyChangeInfo.moneyChange">
+      <p><span>{{info.coin.value}} р. - {{info.quantity}} шт.</span></p>
+    </div>
+  </div>
+</div>

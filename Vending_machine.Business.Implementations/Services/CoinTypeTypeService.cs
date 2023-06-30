@@ -11,4 +11,11 @@ public class CoinTypeTypeService : BaseCrudService<CoinType, CoinTypeCreateDto, 
     public CoinTypeTypeService(IBaseCrudRepository<CoinType> repository, IMapper mapper) : base(repository, mapper)
     {
     }
+
+    public async Task<IList<CoinTypeFullOutDto>> GetAllCoinsFulAsync(CancellationToken cancellationToken)
+    {
+        var entities = await _repository.GetAllAsync(cancellationToken);
+        var result = _mapper.Map<IList<CoinTypeFullOutDto>>(entities);
+        return result;
+    }
 }

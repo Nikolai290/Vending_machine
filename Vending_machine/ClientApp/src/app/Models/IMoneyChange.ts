@@ -1,6 +1,6 @@
-﻿import {ICoin} from "./Coin";
+﻿import {ICoinShort} from "./ICoin";
 
 export interface IMoneyChange {
-  coin: ICoin;
+  coin: ICoinShort;
   quantity: number;
 }

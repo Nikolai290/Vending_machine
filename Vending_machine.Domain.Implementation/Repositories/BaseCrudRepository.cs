@@ -54,7 +54,7 @@ public class BaseCrudRepository<TEntity> : IBaseCrudRepository<TEntity> where TE
 
     public async Task<IEnumerable<TEntity>> GetAllAsync(CancellationToken cancellationToken)
     {
-        return await _dbSet.ToListAsync(cancellationToken);
+        return await _dbSet.OrderBy(x => x.Id).ToListAsync(cancellationToken);
     }
 
     public virtual async Task<TEntity> CreateAsync(TEntity obj, CancellationToken cancellationToken)

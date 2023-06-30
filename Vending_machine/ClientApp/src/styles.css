@@ -3,3 +3,36 @@
   display: flex;
   flex-wrap: wrap;
 }
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  margin: auto;
+}
+.mgtop20 {
+  margin-top: 20px;
+}
+
+@media (max-width: 910px) {
+  .main-content {
+    width: 750px;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 610px) {
+  .main-content {
+    width: 450px;
+  }
+}
+@media (max-width: 460px) {
+  .main-content {
+    width: 300px;
+  }
+}

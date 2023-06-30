@@ -1,0 +1,6 @@
+<div>
+  <p>catalog works!</p>
+  <div *ngIf="data && fieldsInfo && fieldsInfo.length > 0">
+    <app-table [data]="data" [columnInfo]="fieldsInfo"></app-table>
+  </div>
+</div>

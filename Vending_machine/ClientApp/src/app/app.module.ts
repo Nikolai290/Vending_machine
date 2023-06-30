@@ -10,6 +10,13 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { ProductsPanelComponent } from './components/products-panel/products-panel.component';
 import { ProductComponent } from './components/product/product.component';
 import { ModalWindowComponent } from './components/modal-window/modal-window.component';
+import { MoneyChangeInfoComponent } from './components/money-change-info/money-change-info.component';
+import { PurchasedProductComponent } from './components/purchased-product/purchased-product.component';
+import { AdministatorPageComponent } from './pages/administator-page/administator-page.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
+import { TableComponent } from './pages/catalog/components/table/table.component';
+import { CoinsCatalogComponent } from './pages/coins-catalog/coins-catalog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,14 @@ import { ModalWindowComponent } from './components/modal-window/modal-window.com
     CoinPanelComponent,
     ProductsPanelComponent,
     ProductComponent,
-    ModalWindowComponent
+    ModalWindowComponent,
+    MoneyChangeInfoComponent,
+    PurchasedProductComponent,
+    AdministatorPageComponent,
+    NavigationComponent,
+    CatalogComponent,
+    TableComponent,
+    CoinsCatalogComponent
   ],
   imports: [
     BrowserModule,

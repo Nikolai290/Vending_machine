@@ -7,7 +7,7 @@ namespace Vending_machine.Business.Implementations.Services;
 
 public class BaseCrudService<TEntity, TCreateDto, TUpdateDto, TOutDto> : IBaseCrudService<TCreateDto, TUpdateDto, TOutDto> where TEntity : BaseDbEntity
 {
-    private readonly IBaseCrudRepository<TEntity> _repository;
+    protected readonly IBaseCrudRepository<TEntity> _repository;
     protected readonly IMapper _mapper;
 
     public BaseCrudService(IBaseCrudRepository<TEntity> repository, IMapper mapper)
