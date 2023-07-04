@@ -27,6 +27,26 @@
 Тестовое задание
 https://disk.yandex.ru/i/OLZe4NyxZSdEyw
 
+## Инициализация БД
+Для первоначальной инициализации БД необходимо запустить проект Vending_machine.Utilities.InitDatabase
+
+## Настройка
+### Vending_machine
+
+appSettings.json:
+
+`"DbSettings": {
+"ConnectionString": "Host=localhost;Port=5432;User ID=postgres;Password=123;Database=vending_machine;"
+}`
+
+### Vending_machine.Utilities.InitDatabase
+
+appSettings.json:
+
+`    "ConnectionStrings": {
+"PostgreSql": "Host=localhost;Port=5432;User ID=postgres;Password=123;Database=vending_machine;"
+}`
+
 # Скриншоты
 ### Интерфейс покупателя
 ![Интерфейс покупателя](readme_res/Screenshot_1.jpg)
