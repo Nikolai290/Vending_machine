@@ -26,3 +26,17 @@
 
 Тестовое задание
 https://disk.yandex.ru/i/OLZe4NyxZSdEyw
+
+# Скриншоты
+## Интерфейс покупателя
+![Интерфейс покупателя](readme_res/Screenshot_1.jpg)
+## Покупка
+![Покупка](readme_res/Screenshot_2.jpg)
+## Сдача
+![Сдача](readme_res/Screenshot_3.jpg)
+## Адаптивный дизайн
+
+Количество колонок подстраивается под ширину экрана
+![Адаптивный дизайн 6 колонок](readme_res/Screenshot_4.jpg)
+![Адаптивный дизайн 5 колонок](readme_res/Screenshot_5.jpg)
+![Адаптивный дизайн 3 колонки](readme_res/Screenshot_6.jpg)
